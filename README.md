@@ -121,6 +121,17 @@ And this is the dataset2 running results.
 I almost copied the code from the course and did little modification.
 
 
+##Update
+I make some update as code reviewer request.
+But when I update the LiDar update as regular Kalman Filter instead of UKF, I met some issue.
+
+After several calculation, the x_, P_ and RMSE become very large, so it cannot carry on and the simulator get stuck.see below picture.
+![](capture1.png)
+
+
+Could you help to point out what is wrong? thank you.
+
+
 
 
 
