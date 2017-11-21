@@ -103,7 +103,10 @@ For the older version, your algorithm will also be run against "sample-laser-rad
 
 This part really me strapped.
 I tuned the std_a_ and std_yawdd_ parameter to meet the RMSE requirement.
-You can see the attached RMSE_tune.pdf for detailed parameter tuning.
+Although the dataset2 RMSE(3) almost meet the requirement, but I can not figure out how to tune it.
+
+Also the NIS can meet the requirement.(5% above 7.8)
+![](capture1.png)
 
 ##Follows the Correct Algorithm
 I followed the flow chart of below picture.
@@ -122,14 +125,7 @@ I almost copied the code from the course and did little modification.
 
 
 ##Update
-I make some update as code reviewer request.
-But when I update the LiDar update as regular Kalman Filter instead of UKF, I met some issue.
-
-After several calculation, the x_, P_ and RMSE become very large, so it cannot carry on and the simulator get stuck.see below picture.
-![](capture1.png)
-
-
-Could you help to point out what is wrong? thank you.
+I make some update to meet the requirement of rubic.
 
 
 
